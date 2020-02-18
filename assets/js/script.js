@@ -59,6 +59,9 @@ function validar(){
     }else  if (telefono.length > 15){
         alert("Ingresar máximo 15 caractéres.");
         return false
+    }else  if (isNaN(telefono)){
+        alert("Teléfono inválido.");
+        return false
     }//*************************** 
     else{
         alert("Bienvenido " + nombre + " " + apellidos);
